@@ -1,17 +1,20 @@
+## Project- Teams Clone - Microsoft Engage 2021
+
 
 ## Features
-* Live Closed Captioning
-* Real-time Transcription
+* Authentication via Google and Facebook
+* Chat Rooms
+* Attachments upload
 * Video conferencing with real-time video and audio
 * Enable/Disable camera
 * Mute/unmute mic
 * Screen sharing
+* Live Closed Captioning
 * Dominant Speaker indicator
 * Network Quality Indicator
 
 ## Browser Support
 This application is supported only on Google Chrome.
-
 
 The local token server is managed by [server.js](https://github.com/symblai/symbl-video-react/blob/master/server.js)
 
