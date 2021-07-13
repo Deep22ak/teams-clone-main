@@ -3,6 +3,7 @@ This app is the teams clone built by Siddharth Gupta from NSUT, Delhi.
 This is a video conferencing app in which you can chat with anyone.
 
 ## Hosted at https://siddharth-gupta-teams.netlify.app/
+If you are ruuning the website for the first time then please be patient as heroku servers take time when activated for the first time
 ## Video at https://youtu.be/UHvFlqRzDaM
 
 ## Features
@@ -24,6 +25,7 @@ This is a video conferencing app in which you can chat with anyone.
 * Render quality low/high/standard
 * Dominant Speaker Mode Low/High/Standard
 * Audio level button
+* Responsive UI
 
 ## Browser Support
 This application is supported only on Google Chrome.
