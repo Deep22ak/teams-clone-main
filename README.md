@@ -19,7 +19,6 @@ This is a video conferencing app in which you can chat with anyone.
 * Seen message bubbles
 * Attachment option in chat
 * Text styling in chat
-* Google/ Facebook Authentication
 * Audio input/output options before video call
 * Max bit rate and presentation mode
 * Render quality low/high/standard
