@@ -1,74 +1,99 @@
 ## Project- Teams Clone - Microsoft Engage 2021
+This app is the teams clone built by Siddharth Gupta from NSUT, Delhi.
+This is a video conferencing app in which you can chat with anyone.
 
+## Hosted at https://siddharth-gupta-teams.netlify.app/
+## Video at https://youtu.be/UHvFlqRzDaM
 
 ## Features
 * Authentication via Google and Facebook
 * Chat Rooms
-* Attachments upload
-* Video conferencing with real-time video and audio
+* Video conferencing with real-time video and audio upto 50 users
 * Enable/Disable camera
 * Mute/unmute mic
 * Screen sharing
 * Live Closed Captioning
 * Dominant Speaker indicator
 * Network Quality Indicator
+* Ability to add someone in the chat room during call
+* Seen message bubbles
+* Attachment option in chat
+* Text styling in chat
+* Google/ Facebook Authentication
+* Audio input/output options before video call
+* Max bit rate and presentation mode
+* Render quality low/high/standard
+* Dominant Speaker Mode Low/High/Standard
+* Audio level button
 
 ## Browser Support
 This application is supported only on Google Chrome.
 
-The local token server is managed by [server.js](https://github.com/symblai/symbl-video-react/blob/master/server.js)
 
 Run the app locally with
 
-    $ npm start
+    $ cd client
+    $ npm install
+    
+In a parallel terminal run
+    
+    $ cd server
+    $ npm install
 
+As I have deployed the app on heroku, therefore to run it locally it is necessary to change .env file both in server and clinet
+    REACT_APP_SYMBL_TOKEN_ENDPOINT=https://teamsclone-back.herokuapp.com/symbl-token
+    REACT_APP_TWILIO_TOKEN_ENDPOINT=https://teamsclone-back.herokuapp.com/twilio-token
+    
+    Change these to
+    REACT_APP_SYMBL_TOKEN_ENDPOINT=http://loaclhost:8081/symbl-token
+    REACT_APP_TWILIO_TOKEN_ENDPOINT=http://localhost:8081/twilio-token
+    
+Now write
+
+    $ npm run dev in client terminal
+    $ npm start in server terminal
+    
 This will start the local token server and run the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to see the application in the browser.
 
-The page will reload if you make changes to the source code in `src/`.
-You will also see any linting errors in the console. Start the token server locally with
-
-    $ npm run server
-
-The token server runs on port 8081 exposes two `GET` endpoints. One to generate access token for Symbl and one for generating access token for Twilio. 
-
-Symbl token endpoint expects `GET` request at `/symbl-token` route with no parameters.
-
-T
-### Multiple Participants in a Room
+## Multiple Participants in a Room
 
 If you want to see how the application behaves with multiple participants, you can simply open `localhost:3000` in multiple tabs in your browser and connect to the same room using different user names.
 
-Additionally, if you would like to invite other participants to a room, each participant would need to have their own installation of this application and use the same room name and Account SID (the API Key and Secret can be different).
+### Deployement
 
-## Dependencies
+    The app is deployed in two ways
+    1) The front end is deployed to netlify
+    2) The back end is deployed to heroku
+    
+  To play with my deployed site, then this is the url
+  https://siddharth-gupta-teams.netlify.app/
+ 
+ If you running for the first time then please be patient while testing out the site as heroku servers takes some time while being activated for the first time
+ 
+ ## Building of this app
+ 
+ There are two folders: client and server
+ 
+ Client is for front end - React.js
+ 
+ Server is for backend - Node.js
+ 
+ The app is using twilio SDK and symbl API for video connferencing functionality
+ 
+ To break through the app
+ 
+ Go to clinet and find Index.js
+ Then find App.js
+ You will they know all the components and routing
+ 
+ ## Agile Methodology
+![image](https://user-images.githubusercontent.com/72941353/125476376-ae33cbc2-2256-43a4-a446-ecffb7807327.png)
+![image](https://user-images.githubusercontent.com/72941353/125473764-ae5bd4c5-fd70-40af-97b6-3c7f6b8a9dbf.png)
+![image](https://user-images.githubusercontent.com/72941353/125473897-9d47ed45-2d59-4a40-8a52-2203fe443c58.png)
+![image](https://user-images.githubusercontent.com/72941353/125473954-1c18419b-2c47-4848-a3a8-11c27cc13b9e.png)
+![Screenshot (145)](https://user-images.githubusercontent.com/72941353/125477559-6ab65ec8-fa5f-46d7-beb9-39d1afc3a4f4.png)
 
-```json
-  "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
-    "@primer/octicons-react": "^10.0.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "clsx": "^1.1.1",
-    "concurrently": "^5.1.0",
-    "d3-timer": "^1.0.10",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "fscreen": "^1.0.2",
-    "is-plain-object": "^4.1.1",
-    "lodash-es": "^4.17.15",
-    "lodash.throttle": "^4.1.1",
-    "moment": "^2.27.0",
-    "node-fetch": "^2.6.0",
-    "react": "^16.13.1",
-    "react-copy-to-clipboard": "^5.0.2",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "twilio": "^3.48.1",
-    "twilio-video": "^2.7.1"
-  }
-```
 
+## Workflow
+If you want to look at my work flow
+go to https://docs.google.com/document/d/1Gwq2wIEbA61vCsKedY-1Xy6djZT9HauQW9BEUEcZATM/edit?usp=sharing
