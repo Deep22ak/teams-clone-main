@@ -17,7 +17,8 @@ If you are ruuning the website for the first time then please be patient as hero
 * Dominant Speaker indicator
 * Network Quality Indicator
 * Ability to add someone in the chat room during call
-* Seen message bubbles
+* Seen message status
+* E-mail notification if person is offline
 * Attachment option in chat
 * Text styling in chat
 * Audio input/output options before video call
